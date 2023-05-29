@@ -1,0 +1,6 @@
+pymongo
+pandas
+numpy
+sklearn
+from_root
+certifi
