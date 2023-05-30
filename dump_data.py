@@ -1,13 +1,11 @@
 import pandas as pd
 import json
 from Customer.configuration import mongo_client
+from Customer.constants import training
 
-DATA_FILE_PATH = 'customer_data.csv'
-DATABASE_NAME = "CPA_DB"
-COLLECTION_NAME = "customer"
 
 if __name__ == "__main__":
-    df = pd.read_csv(DATA_FILE_PATH)
+    df = pd.read_csv(training.DATA_FILE_PATH)
     print(f'Rows and Columns: {df.shape}')
 
     # convert dataframe to json format so that we can dump the records into mongodb
@@ -17,4 +15,4 @@ if __name__ == "__main__":
     print(json_records[0])
 
     # inserted converted json record to mongodb
-    mongo_client[DATABASE_NAME][COLLECTION_NAME].insert_many(json_records)
+    mongo_client[training.DATABASE_NAME][training.COLLECTION_NAME].insert_many(json_records)

@@ -1,6 +1,10 @@
-pymongo
 pandas
 numpy
 sklearn
 from_root
 certifi
+dill
+requests
+pyyaml
+sklearn
+scikit-learn
