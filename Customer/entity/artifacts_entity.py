@@ -3,6 +3,14 @@ from dataclasses import dataclass
 
 @dataclass
 class DataIngestionArtifact:
-    feature_store_file: str
     train_file_path: str
-    test_file_path: str
+
+
+@dataclass
+class DataTransformationArtifact:
+    transformed_train_path: str
+
+
+@dataclass
+class ModelTrainerArtifact:
+    model_path: str
