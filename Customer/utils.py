@@ -1,7 +1,6 @@
 import os
 import sys
 import pandas as pd
-import numpy as np
 from Customer.exception import CustomerException
 from Customer.logger import logging
 from Customer.configuration import mongo_client
@@ -101,36 +100,3 @@ def load_object(file_path: str) -> object:
     except Exception as e:
         raise CustomerException(e, sys)
 
-
-def save_numpy_array_data(file_path: str, array: np.array) -> None:
-    """
-    This fucnion  will save the array with numpy
-    file_path : path of file where yaml can store
-    array : Array to be stored in numpy
-    ========================================================
-    returns numpy object
-    """
-    try:
-        logging.info("Entered the save_numpy method of utils")
-        os.makedirs(os.path.dirname(file_path), exist_ok=True)
-        with open(file_path, 'wb') as file:
-            np.save(str(file), array)
-        logging.info("Exited from the save_numpy method of utils")
-    except Exception as e:
-        raise CustomerException(e, sys)
-
-
-def load_numpy_array_data(file_path: str) -> np.array:
-    """
-    This fucnion  will load the numpy array using numpy
-    file_path : path of file where yaml can store
-    ========================================================
-    returns numpy array
-    """
-    try:
-        if not os.path.exists(file_path):
-            raise Exception(f"The file: {file_path} is not exists")
-        with open(file_path, 'rb') as file:
-            return np.load(str(file))
-    except Exception as e:
-        raise CustomerException(e, sys)
