@@ -11,9 +11,6 @@ list_of_files = [
     f"{project_name}/components/__init__.py",
     f"{project_name}/components/data_ingestion.py",
     f"{project_name}/components/data_transformation.py",
-    f"{project_name}/components/data_validation.py",
-    f"{project_name}/components/model_evaluation.py",
-    f"{project_name}/components/model_pusher.py",
     f"{project_name}/components/model_trainer.py",
     f"{project_name}/entity/__init__.py",
     f"{project_name}/entity/artifacts_entity.py",
@@ -25,11 +22,12 @@ list_of_files = [
     f"{project_name}/pipeline/training_pipeline.py",
     f"{project_name}/pipeline/batch_prediction.py"
     f"{project_name}/utils.py",
-    "template/index.html",
-    "template/result.html",
+    "templates/index.html",
+    "templates/result.html",
     "application.py",
     "requirements.txt",
-    ".gitignore"
+    ".gitignore",
+    "dump_data.py"
 ]
 
 for filepath in list_of_files:
