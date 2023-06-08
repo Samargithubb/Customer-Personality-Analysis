@@ -1,0 +1,4 @@
+[ 2023-06-08 11:47:58,665 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2023-06-08 11:47:58,669 ] 224 werkzeug - INFO -  * Debugger PIN: 647-290-208
+[ 2023-06-08 11:47:59,097 ] 224 werkzeug - INFO - 127.0.0.1 - - [08/Jun/2023 11:47:59] "POST /predict HTTP/1.1" 200 -
+[ 2023-06-08 12:05:56,821 ] 224 werkzeug - INFO -  * Detected change in 'C:\\Users\\samar\\PycharmProjects\\Customer Personality Analysis\\templates.py', reloading

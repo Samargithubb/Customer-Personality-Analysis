@@ -1,0 +1,29 @@
+[ 2023-06-01 10:55:19,894 ] 17 root - INFO - ====================Data Insertion log started.==================== 
+[ 2023-06-01 10:55:19,894 ] 18 root - INFO - Exporting collection data as pandas dataframe
+[ 2023-06-01 10:55:19,894 ] 21 root - INFO - Reading data from database: CPA_DB and collection: customer
+[ 2023-06-01 10:55:27,298 ] 23 root - INFO - Found columns: Index(['_id', 'ID;Year_Birth;Education;Marital_Status;Income;Kidhome;Teenhome;Dt_Customer;Recency;MntWines;MntFruits;MntMeatProducts;MntFishProducts;MntSweetProducts;MntGoldProds;NumDealsPurchases;NumWebPurchases;NumCatalogPurchases;NumStorePurchases;NumWebVisitsMonth;AcceptedCmp3;AcceptedCmp4;AcceptedCmp5;AcceptedCmp1;AcceptedCmp2;Complain;Z_CostContact;Z_Revenue;Response'], dtype='object')
+[ 2023-06-01 10:55:27,298 ] 24 root - INFO - Row and Columns in df: (2240, 2)
+[ 2023-06-01 10:55:27,298 ] 26 root - INFO - Dropping column: _id
+[ 2023-06-01 10:55:27,298 ] 28 root - INFO - Row and columns in df: (2240, 1)
+[ 2023-06-01 10:55:27,298 ] 23 root - INFO - Save data in feature store having the shape: (2240, 1) 
+[ 2023-06-01 10:55:27,298 ] 24 root - INFO - Columns for the dataframe are : Index(['ID;Year_Birth;Education;Marital_Status;Income;Kidhome;Teenhome;Dt_Customer;Recency;MntWines;MntFruits;MntMeatProducts;MntFishProducts;MntSweetProducts;MntGoldProds;NumDealsPurchases;NumWebPurchases;NumCatalogPurchases;NumStorePurchases;NumWebVisitsMonth;AcceptedCmp3;AcceptedCmp4;AcceptedCmp5;AcceptedCmp1;AcceptedCmp2;Complain;Z_CostContact;Z_Revenue;Response'], dtype='object') 
+[ 2023-06-01 10:55:27,298 ] 26 root - INFO - create dataset directory folder if not available
+[ 2023-06-01 10:55:27,314 ] 31 root - INFO - Data Ingestion Completed
+[ 2023-06-01 10:55:27,314 ] 32 root - INFO - Preparing the artifact
+[ 2023-06-01 10:55:27,314 ] 35 root - INFO - Data Ingestion artifact : DataIngestionArtifact(train_file_path='artifact\\06_01_2023_10_55_18\\ingested\\Dataset\\train.csv') 
+[ 2023-06-01 10:55:27,315 ] 15 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-06-01 10:55:27,315 ] 73 root - INFO - ====================Data Transformation log started.==================== 
+[ 2023-06-01 10:55:27,330 ] 77 root - INFO -  Shape of the train data file: (2240, 29)
+[ 2023-06-01 10:55:27,338 ] 79 root - INFO -  Shape of transformed data file: (2204, 6)
+[ 2023-06-01 10:55:27,338 ] 80 root - INFO - Data Transformation is completed
+[ 2023-06-01 10:55:27,346 ] 87 root - INFO - Preparing the artifact for transformation
+[ 2023-06-01 10:55:27,346 ] 91 root - INFO - Saved transformed data to artifact\06_01_2023_10_55_18\data_transformation\transformed\train.csv
+[ 2023-06-01 10:55:27,346 ] 20 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Model Trainer <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-06-01 10:55:27,346 ] 68 root - INFO - ==================== Model Training log started.==================== 
+[ 2023-06-01 10:55:27,346 ] 28 root - INFO - Loading data from transformed dir for training the model
+[ 2023-06-01 10:55:32,004 ] 45 root - INFO - Saved elbow img
+[ 2023-06-01 10:55:32,004 ] 54 root - INFO - Optimal Number of cluster based on knee plot is 3
+[ 2023-06-01 10:55:32,099 ] 62 root - INFO - Model Saved Successfully
+[ 2023-06-01 10:55:32,099 ] 70 root - INFO - ====================Model Trainer  completed.==================== 
+
+
