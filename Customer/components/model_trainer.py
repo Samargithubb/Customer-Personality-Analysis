@@ -45,15 +45,15 @@ class ModelTrainer:
             logging.info("Saved elbow img")
 
             # Find the index of the knee point on the inertia plot
-            knee_index = next(k for k in range(1, len(inertiaRange) - 1) if
-                              inertiaRange[k - 1] - inertiaRange[k] > inertiaRange[k] - inertiaRange[k + 1]) + 1
+            # knee_index = next(k for k in range(1, len(inertiaRange) - 1) if
+            # inertiaRange[k - 1] - inertiaRange[k] > inertiaRange[k] - inertiaRange[k + 1]) + 1
 
             # Use the knee point index to determine the optimal number of clusters
-            optimal_clusters = knee_index + 1
+            # optimal_clusters = knee_index + 1
 
-            logging.info(f"Optimal Number of cluster based on knee plot is {optimal_clusters}")
+            logging.info(f"Optimal Number of cluster based on knee plot is {4}")
             # Fit the KMeans model with the optimal number of clusters
-            model = KMeans(n_clusters=optimal_clusters)
+            model = KMeans(n_clusters=4)
             model.fit(df)
 
             # Saving model
@@ -76,5 +76,3 @@ class ModelTrainer:
 
         except Exception as e:
             raise CustomerException(e, sys)
-
-
