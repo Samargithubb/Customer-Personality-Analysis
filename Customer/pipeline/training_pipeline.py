@@ -1,5 +1,4 @@
 import sys
-import os
 from Customer.logger import logging
 from Customer.exception import CustomerException
 from Customer.entity import config_entity
@@ -39,4 +38,5 @@ def start_training_pipeline():
 
         logging.info("***********************TRAINING COMPLETED ******************************")
     except Exception as e:
-        raise CustomerException(e,sys)
+        raise CustomerException(e, sys)
+
