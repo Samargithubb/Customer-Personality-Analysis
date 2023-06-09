@@ -4,10 +4,10 @@ from Customer.exception import CustomerException
 from Customer.predictor import ModelResolver
 from Customer.pipeline.training_pipeline import start_training_pipeline
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 
-@app.route('/', methods=['GET'])
+@application.route('/', methods=['GET'])
 def homePage():
     try:
         return render_template("index.html")
@@ -15,7 +15,7 @@ def homePage():
         raise CustomerException(e, sys)
 
 
-@app.route('/train', methods=['POST', 'GET'])
+@application.route('/train', methods=['POST', 'GET'])
 def train():
     if request.method == 'POST':
         try:
@@ -27,7 +27,7 @@ def train():
         return render_template("index.html")
 
 
-@app.route('/predict', methods=['POST', 'GET'])
+@application.route('/predict', methods=['POST', 'GET'])
 def predict():
     if request.method == 'POST':
         try:
@@ -52,4 +52,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(port=5000, debug=True)
+    application.run(port=5000, debug=True)
