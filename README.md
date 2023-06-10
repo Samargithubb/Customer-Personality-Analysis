@@ -5,10 +5,10 @@ Customer Personality Analysis is a Machine Learning model that provides business
 The Customer Personality dataset consists of 29 columns (features) and 2240 rows. A detailed description of features is given below:
 
 People 
-•	ID: Customer’s unique identifier 
-•	Year_Birth: Customer’s birth year
-•	Education: Customer’s education level 
-•	Marital_Status: Customer’s marital status
+-	ID: Customer’s unique identifier 
+- Year_Birth: Customer’s birth year
+-	Education: Customer’s education level 
+-	Marital_Status: Customer’s marital status
 •	Income: Customer’s yearly household income 
 •	Kidhome: Number of children in customer’s household 
 •	Teenhome: Number of teenagers in customer’s household 
@@ -38,10 +38,10 @@ Place
 
 * Home Page 
 <p align="center">
-  <img src="Image\Screenshot 2023-05-18 183317.png" width='600px'>
+  <img src="Image/Screenshot 2023-06-09 083517.png" width='600px'>
 </p>
 
 * Predict Page
 <p align="center">
-  <img src="Image\Screenshot 2023-05-18 183504.png" width='600px' border = "1px">
+  <img src="Image\Screenshot 2023-06-09 083720" width='600px' border = "1px">
 </p>
