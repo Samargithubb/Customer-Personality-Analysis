@@ -3,6 +3,8 @@ from flask import Flask, render_template, request
 from Customer.exception import CustomerException
 from Customer.predictor import ModelResolver
 from Customer.pipeline.training_pipeline import start_training_pipeline
+import warnings
+warnings.filterwarnings('ignore')
 
 application = Flask(__name__)
 
