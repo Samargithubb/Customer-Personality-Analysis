@@ -38,10 +38,9 @@ def predict():
             TotalSpendings = int(request.form['TotalSpendings'])
             Children = int(request.form['Children'])
             MonthEnrollement = int(request.form['MonthEnrollement'])
-            data = [Income, Recency, Age, TotalSpendings, Children, MonthEnrollement]
 
             model = ModelResolver()
-            output = model.predict([data])
+            output = model.predict([[Income, Recency, Age, TotalSpendings, Children, MonthEnrollement]])[0]
             print(output)
             return render_template('result.html', prediction=str(output))
         except Exception as e:
