@@ -45,3 +45,11 @@ Place
 <p align="center">
   <img src="Image/Screenshot 2023-06-09 083720.png" width='600px' border = "1px">
 </p>
+
+## Documents
+#### 🌟 Explore the architecture behind this project and delve into its creation process! 🏗️ Simply follow the links below to delve deeper! 💡✨
+* [High-Level Document (HLD)](https://docs.google.com/document/d/1iotHhcLeST0XAlx1R7iy3dMSNIfE_uIa/edit?usp=sharing&ouid=108516397600379304099&rtpof=true&sd=true)
+* [Low-Level Document (LLD)](https://docs.google.com/document/d/1w6jTFe9KtSyn2MjYdtAkrDmhUSmeuf6K/edit?usp=sharing&ouid=108516397600379304099&rtpof=true&sd=true)
+* [Architecture](https://docs.google.com/document/d/1XeyUbqZRh7ib4gabVuKjACcusH1jCYUx/edit?usp=sharing&ouid=108516397600379304099&rtpof=true&sd=true)
+* [Wireframe](https://docs.google.com/document/d/1F045CqUgdDZtFVT6BsF9Oe5K4S4XBaMg/edit?usp=sharing&ouid=108516397600379304099&rtpof=true&sd=true)
+* [Detail-Project-Report (DPR)](https://docs.google.com/document/d/1Go3mtp4G-l3QmqYP5bInn0gpnXwrEi-f/edit?usp=sharing&ouid=108516397600379304099&rtpof=true&sd=true)
